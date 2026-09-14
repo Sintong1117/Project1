@@ -1,0 +1,534 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Batara Hasintongan Nadapdap | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">BHN<span>.</span></div>
+
+            <ul class="nav-menu">
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#skills">Keahlian</a></li>
+                <li><a href="#projects">Proyek</a></li>
+                <li><a href="#experience">Pengalaman</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+
+            <button class="menu-button" onclick="toggleMenu()">☰</button>
+        </nav>
+    </header>
+
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="greeting">Halo, saya</p>
+
+            <h1>
+                Batara Hasintongan
+                <span>Nadapdap</span>
+            </h1>
+
+            <h2>IT Support & Software Developer</h2>
+
+            <p class="hero-description">
+                Fresh Graduate D3 Teknologi Komputer yang memiliki
+                minat pada IT Support, System Administration,
+                IT Infrastructure, IoT, dan Software Development.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary">
+                    Lihat Proyek
+                </a>
+
+                <a href="#contact" class="btn secondary">
+                    Hubungi Saya
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+
+        <div class="section-title">
+            <p>TENTANG SAYA</p>
+            <h2>Profil</h2>
+        </div>
+
+        <div class="about-content">
+
+            <div class="about-card">
+                <div class="profile-icon">BHN</div>
+            </div>
+
+            <div class="about-text">
+
+                <h3>Batara Hasintongan Nadapdap</h3>
+
+                <p>
+                    Saya merupakan lulusan Diploma III Teknologi Komputer
+                    dari Institut Teknologi Del.
+                </p>
+
+                <p>
+                    Saya memiliki pengalaman sebagai IT Support Intern
+                    dengan pengalaman dalam troubleshooting aplikasi,
+                    pengelolaan database MySQL, administrasi sistem Linux,
+                    serta pengembangan website berbasis PHP.
+                </p>
+
+                <p>
+                    Saya tertarik untuk terus mengembangkan kemampuan
+                    di bidang IT Support, System Administration,
+                    IT Infrastructure, DevOps, IoT, dan Software Development.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+    <section id="skills" class="section skills-section">
+
+        <div class="section-title">
+            <p>KEMAMPUAN</p>
+            <h2>Keahlian</h2>
+        </div>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <div class="skill-icon">🐍</div>
+                <h3>Python</h3>
+                <p>
+                    Pemrograman dasar, function, OOP,
+                    dan pengembangan aplikasi sederhana.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">💻</div>
+                <h3>PHP</h3>
+                <p>
+                    Pengembangan website menggunakan
+                    PHP dan database.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🗄️</div>
+                <h3>MySQL</h3>
+                <p>
+                    Pengelolaan database, query,
+                    dan integrasi database dengan aplikasi.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🐧</div>
+                <h3>Linux</h3>
+                <p>
+                    Administrasi sistem Linux,
+                    konfigurasi dan troubleshooting.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🌐</div>
+                <h3>Networking</h3>
+                <p>
+                    Dasar jaringan komputer,
+                    troubleshooting dan konfigurasi jaringan.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">📡</div>
+                <h3>IoT</h3>
+                <p>
+                    Pengembangan sistem IoT menggunakan
+                    ESP32 dan sensor.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🔧</div>
+                <h3>IT Support</h3>
+                <p>
+                    Troubleshooting perangkat,
+                    aplikasi dan sistem.
+                </p>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">🔀</div>
+                <h3>Git & GitHub</h3>
+                <p>
+                    Version control dan pengelolaan
+                    repository project.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+
+        <div class="section-title">
+            <p>PORTOFOLIO</p>
+            <h2>Proyek Saya</h2>
+        </div>
+
+        <div class="projects-grid">
+
+            <!-- PROJECT 1 -->
+            <article class="project-card">
+
+                <div class="project-number">
+                    01
+                </div>
+
+                <div class="project-content">
+
+                    <p class="project-category">
+                        Internet of Things
+                    </p>
+
+                    <h3>
+                        Implementasi Sistem Otomatis
+                        dan Monitoring Infus Berbasis IoT
+                    </h3>
+
+                    <p>
+                        Sistem untuk melakukan monitoring sisa cairan
+                        infus secara real-time menggunakan sensor berat.
+                        Data sensor diproses menggunakan ESP32 dan
+                        Node-RED kemudian ditampilkan pada website.
+                    </p>
+
+                    <div class="tags">
+                        <span>ESP32</span>
+                        <span>Load Cell</span>
+                        <span>HX711</span>
+                        <span>Node-RED</span>
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+            <a href="https://github.com/batara3355/project2" target="_blank" class="project-link">
+
+                <article class="project-card project-image-card">
+
+                    <!-- GAMBAR PROJECT -->
+                    <img src="images/people.jpg" alt="Danau Toba Tourism Website" class="project-image">
+
+                    <!-- OVERLAY -->
+                    <div class="project-overlay">
+
+                        <div class="project-number">
+                            02
+                        </div>
+
+                        <div class="project-content">
+
+                            <p class="project-category">
+                                Web Development
+                            </p>
+
+                            <h3>
+                                Danau Toba Tourism Website
+                            </h3>
+
+                            <p>
+                                Website informasi pariwisata Danau Toba
+                                yang menyediakan informasi mengenai berbagai
+                                destinasi wisata. Data destinasi disimpan
+                                menggunakan database MySQL.
+                            </p>
+
+                            <div class="tags">
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                                <span>HTML</span>
+                                <span>CSS</span>
+                            </div>
+
+                            <div class="project-button">
+                                Lihat Project →
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </a>
+            <!-- PROJECT 2 -->
+            <!-- <article class="project-card">
+
+                <div class="project-number">
+                    02
+                </div>
+
+                <div class="project-content">
+
+                    <p class="project-category">
+                        Web Development
+                    </p>
+
+                    <h3>
+                        Danau Toba Tourism Website
+                    </h3>
+
+                    <p>
+                        Website informasi pariwisata Danau Toba
+                        yang menyediakan informasi mengenai berbagai
+                        destinasi wisata. Data destinasi disimpan
+                        menggunakan database MySQL.
+                    </p>
+
+                    <div class="tags">
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+
+                </div>
+
+            </article> -->
+
+
+            <!-- PROJECT 3 -->
+            <article class="project-card">
+
+                <div class="project-number">
+                    03
+                </div>
+
+                <div class="project-content">
+
+                    <p class="project-category">
+                        Python
+                    </p>
+
+                    <h3>
+                        Personal CLI Assistant
+                    </h3>
+
+                    <p>
+                        Aplikasi command-line sederhana menggunakan
+                        Python untuk mengelola daftar tugas.
+                        Project ini dikembangkan untuk mempelajari
+                        Python, Function, File, OOP, dan Git.
+                    </p>
+
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>OOP</span>
+                        <span>File</span>
+                        <span>Git</span>
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section experience-section">
+
+        <div class="section-title">
+            <p>PENGALAMAN</p>
+            <h2>Pengalaman Kerja</h2>
+        </div>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span class="timeline-date">
+                        Februari 2025 – Agustus 2025
+                    </span>
+
+                    <h3>IT Support Intern</h3>
+
+                    <h4>PT Tera Multi Wahana</h4>
+
+                    <ul>
+                        <li>
+                            Memberikan dukungan teknis kepada pengguna
+                            terkait aplikasi dan sistem perusahaan.
+                        </li>
+
+                        <li>
+                            Melakukan troubleshooting dan analisis
+                            permasalahan sistem.
+                        </li>
+
+                        <li>
+                            Berkoordinasi dengan developer dalam
+                            menganalisis dan menyelesaikan masalah sistem.
+                        </li>
+
+                        <li>
+                            Melakukan pengelolaan database menggunakan MySQL.
+                        </li>
+
+                        <li>
+                            Melakukan administrasi sistem Linux.
+                        </li>
+
+                        <li>
+                            Membantu pengembangan website menggunakan PHP.
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EDUCATION -->
+    <section class="section education-section">
+
+        <div class="section-title">
+            <p>PENDIDIKAN</p>
+            <h2>Pendidikan</h2>
+        </div>
+
+        <div class="education-card">
+
+            <div class="education-year">
+                2022 — 2025
+            </div>
+
+            <div>
+                <h3>D3 Teknologi Komputer</h3>
+
+                <h4>Institut Teknologi Del</h4>
+
+                <p>
+                    IPK: <strong>3.17 / 4.00</strong>
+                </p>
+
+                <p>
+                    Fokus pada IoT, Embedded System,
+                    Web Development, Linux Administration,
+                    dan Computer Networking.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact-section">
+
+        <div class="section-title">
+            <p>KONTAK</p>
+            <h2>Mari Terhubung</h2>
+        </div>
+
+        <p class="contact-description">
+            Jika ingin berdiskusi mengenai project, pekerjaan,
+            atau peluang kolaborasi, silakan hubungi saya.
+        </p>
+
+        <div class="contact-grid">
+
+            <a href="mailto:hasintonggan17ok@gmail.com" class="contact-card">
+                <span>📧</span>
+                <div>
+                    <h3>Email</h3>
+                    <p>hasintonggan17ok@gmail.com</p>
+                </div>
+            </a>
+
+
+            <a href="https://github.com/batara3355" target="_blank" class="contact-card">
+                <span>💻</span>
+                <div>
+                    <h3>GitHub</h3>
+                    <p>github.com/batara3355</p>
+                </div>
+            </a>
+
+
+            <a href="https://www.linkedin.com/in/batara-hasintongan-nadapdap-b994792b0/" target="_blank"
+                class="contact-card">
+                <span>🔗</span>
+                <div>
+                    <h3>LinkedIn</h3>
+                    <p>Profil LinkedIn</p>
+                </div>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © <span id="year"></span>
+            Batara Hasintongan Nadapdap.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+```
