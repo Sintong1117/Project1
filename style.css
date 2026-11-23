@@ -342,14 +342,24 @@ header {
    PROJECTS
 ============================== */
 
+/* ==============================
+   PROJECTS
+============================== */
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
+    align-items: stretch;
 }
 
 .project-card {
     position: relative;
+
+    display: block;
+    /* karena sekarang <a> */
+    text-decoration: none;
+    color: inherit;
 
     background: #1e293b;
     border: 1px solid #334155;
@@ -358,7 +368,6 @@ header {
     padding: 35px;
 
     overflow: hidden;
-
     transition: 0.3s;
 }
 
@@ -376,6 +385,9 @@ header {
     font-weight: bold;
 
     color: #334155;
+
+    z-index: 2;
+    /* pastikan di atas overlay */
 }
 
 .project-category {
@@ -388,38 +400,121 @@ header {
     margin: 12px 0;
     color: white;
     font-size: 23px;
+    line-height: 1.25;
 }
 
 .project-content p {
     color: #94a3b8;
+    font-size: 14px;
 }
 
 .tags {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-
     margin-top: 20px;
 }
 
 .tags span {
     padding: 5px 10px;
-
     border-radius: 5px;
-
     background: #0f172a;
     color: #7dd3fc;
-
     font-size: 12px;
 }
 
+
+/* ==============================
+   PROJECT IMAGE CARD (overlay style)
+============================== */
+
+.project-image-card {
+    position: relative;
+    height: 400px;
+    padding: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+/* OVERLAY */
+.project-overlay {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: flex-end;
+
+    padding: 35px;
+
+    background: linear-gradient(to top,
+            rgba(15, 23, 42, 0.98),
+            rgba(15, 23, 42, 0.75),
+            rgba(15, 23, 42, 0.15));
+
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+/* KONTEN di dalam overlay */
+.project-overlay .project-content {
+    transform: translateY(30px);
+    transition: transform 0.4s ease;
+    max-height: 90%;
+    overflow-y: auto;
+}
+
+/* HOVER EFFECT */
+.project-image-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-image-card:hover .project-image {
+    transform: scale(1.08);
+}
+
+.project-image-card:hover .project-content {
+    transform: translateY(0);
+}
+
+/* Nomor di overlay card */
+.project-image-card .project-number {
+    top: 20px;
+    right: 25px;
+    color: #475569;
+}
+
+/* Tombol */
+.project-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 9px 16px;
+    border: 1px solid #38bdf8;
+    border-radius: 6px;
+    color: #38bdf8;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.project-image-card:hover .project-button {
+    background: #38bdf8;
+    color: #0f172a;
+}
 
 /* ==============================
    EXPERIENCE
 ============================== */
 
 .experience-section {
-    max-width: 900px;
+    max-width: 1150px;
 }
 
 .timeline {
@@ -585,7 +680,7 @@ header {
 ============================== */
 
 .education-section {
-    max-width: 900px;
+    max-width: 1150px;
 }
 
 .education-card {

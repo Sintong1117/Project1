@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sistem Monitoring Infus IoT | Batara Nadapdap</title>
+    <meta name="description"
+        content="Detail proyek Implementasi Sistem Otomatis dan Monitoring Infus Berbasis IoT menggunakan ESP32, Load Cell, HX711, dan Node-RED.">
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="proyek.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <a href="../index.html" class="logo" style="text-decoration:none;">BHN<span>.</span></a>
+
+            <ul class="nav-menu">
+                <li><a href="../index.html#home">Beranda</a></li>
+                <li><a href="../index.html#about">Tentang</a></li>
+                <li><a href="../index.html#skills">Keahlian</a></li>
+                <li><a href="../index.html#projects">Proyek</a></li>
+                <li><a href="../index.html#experience">Pengalaman</a></li>
+                <li><a href="../index.html#contact">Kontak</a></li>
+            </ul>
+
+            <button class="menu-button" onclick="toggleMenu()" aria-label="Buka menu navigasi">☰</button>
+        </nav>
+    </header>
+
+
+    <!-- HERO PROJECT -->
+    <section class="project-hero">
+
+        <a href="../index.html#projects" class="back-link">← Kembali ke Proyek</a>
+
+        <p class="project-hero-category">Internet of Things · 2025</p>
+
+        <h1>Implementasi Sistem Otomatis dan Monitoring Infus Berbasis IoT</h1>
+
+        <p class="project-hero-description">
+            Sistem monitoring sisa cairan infus secara real-time
+            menggunakan sensor berat (Load Cell + HX711) yang diproses
+            oleh ESP32 dan dikirim ke Node-RED untuk ditampilkan pada
+            dashboard website. Sistem juga memberi notifikasi otomatis
+            saat cairan hampir habis.
+        </p>
+
+        <div class="tags">
+            <span>ESP32</span>
+            <span>Load Cell</span>
+            <span>HX711</span>
+            <span>Node-RED</span>
+            <span>PHP</span>
+            <span>MySQL</span>
+            <span>MQTT</span>
+        </div>
+
+        <div class="project-hero-buttons">
+            <a href="#" class="btn primary" target="_blank" rel="noopener">📄 Laporan Proyek</a>
+            <a href="https://github.com/batara3355" class="btn secondary" target="_blank" rel="noopener">💻 Source
+                Code</a>
+        </div>
+
+    </section>
+
+
+    <!-- COVER -->
+    <section class="project-cover">
+        <img src="../images/iot-infus.png" alt="Sistem Monitoring Infus Berbasis IoT" class="project-cover-img">
+    </section>
+
+
+    <!-- OVERVIEW -->
+    <section class="project-section">
+        <div class="project-section-title">
+            <p>OVERVIEW</p>
+            <h2>Tentang Proyek</h2>
+        </div>
+
+        <div class="project-overview-grid">
+            <div class="project-info-card">
+                <h3>🎯 Tujuan</h3>
+                <p>
+                    Membantu tenaga medis memantau sisa cairan infus
+                    pasien secara real-time tanpa harus mengecek
+                    manual ke ruangan, sehingga mengurangi risiko
+                    keterlambatan penggantian infus.
+                </p>
+            </div>
+            <div class="project-info-card">
+                <h3>👤 Peran Saya</h3>
+                <p>
+                    Hardware & Software Developer — merancang
+                    rangkaian sensor, memprogram ESP32, membuat
+                    alur Node-RED, dan membangun dashboard monitoring
+                    berbasis web.
+                </p>
+            </div>
+            <div class="project-info-card">
+                <h3>⏱️ Durasi</h3>
+                <p>
+                    ± 4 bulan (Februari – Juni 2025),
+                    dikerjakan sebagai Tugas Akhir
+                    Diploma III Teknologi Komputer.
+                </p>
+            </div>
+            <div class="project-info-card">
+                <h3>📦 Status</h3>
+                <p>
+                    Selesai — prototipe berhasil diuji
+                    dan dipresentasikan pada sidang Tugas Akhir.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FITUR -->
+    <section class="project-section">
+        <div class="project-section-title">
+            <p>FITUR</p>
+            <h2>Fitur Utama</h2>
+        </div>
+
+        <ul class="feature-list">
+            <li>
+                <span class="feature-icon">⚖️</span>
+                <div>
+                    <h4>Monitoring Berat Real-time</h4>
+                    <p>Sensor Load Cell membaca berat cairan infus secara terus-menerus dan mengirim data ke ESP32.</p>
+                </div>
+            </li>
+            <li>
+                <span class="feature-icon">📡</span>
+                <div>
+                    <h4>Pengiriman Data via MQTT</h4>
+                    <p>ESP32 mengirim data ke broker MQTT untuk diteruskan ke Node-RED secara efisien dan ringan.</p>
+                </div>
+            </li>
+            <li>
+                <span class="feature-icon">🖥️</span>
+                <div>
+                    <h4>Dashboard Website</h4>
+                    <p>Data ditampilkan pada dashboard web berisi grafik sisa cairan, status infus, dan riwayat.</p>
+                </div>
+            </li>
+            <li>
+                <span class="feature-icon">🔔</span>
+                <div>
+                    <h4>Notifikasi Otomatis</h4>
+                    <p>Buzzer dan alert di dashboard aktif saat sisa cairan mencapai ambang batas minimum.</p>
+                </div>
+            </li>
+            <li>
+                <span class="feature-icon">🗄️</span>
+                <div>
+                    <h4>Penyimpanan Riwayat</h4>
+                    <p>Setiap pembacaan sensor disimpan ke database MySQL untuk keperluan analisis dan audit.</p>
+                </div>
+            </li>
+            <li>
+                <span class="feature-icon">🔌</span>
+                <div>
+                    <h4>Kalibrasi Sensor</h4>
+                    <p>Fitur kalibrasi Load Cell melalui HX711 agar pembacaan berat akurat.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+
+    <!-- ARSITEKTUR -->
+    <section class="project-section">
+        <div class="project-section-title">
+            <p>ARSITEKTUR</p>
+            <h2>Alur Sistem</h2>
+        </div>
+
+        <div class="challenge-list">
+            <div class="challenge-item">
+                <h4>1️⃣ Pembacaan Sensor</h4>
+                <p>Load Cell mengukur berat kantong infus → sinyal analog diperkuat HX711 → dikonversi ke digital.</p>
+            </div>
+            <div class="challenge-item">
+                <h4>2️⃣ Pemrosesan ESP32</h4>
+                <p>ESP32 membaca data HX711, menghitung sisa cairan (gram → mL), lalu mengirim via MQTT.</p>
+            </div>
+            <div class="challenge-item">
+                <h4>3️⃣ Node-RED</h4>
+                <p>Node-RED menerima data MQTT, memproses logika notifikasi, dan menyimpan ke MySQL.</p>
+            </div>
+            <div class="challenge-item">
+                <h4>4️⃣ Dashboard Web</h4>
+                <p>Dashboard PHP + Chart.js menampilkan data real-time, grafik historis, dan status perangkat.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- TEKNOLOGI -->
+    <section class="project-section">
+        <div class="project-section-title">
+            <p>TEKNOLOGI</p>
+            <h2>Tech Stack</h2>
+        </div>
+
+        <div class="tech-grid">
+            <div class="tech-item"><span class="tech-icon">🔌</span>
+                <h4>ESP32</h4>
+                <p>Mikrokontroler</p>
+            </div>
+            <div class="tech-item"><span class="tech-icon">⚖️</span>
+                <h4>Load Cell + HX711</h4>
+                <p>Sensor berat</p>
+            </div>
+            <div class="tech-item"><span class="tech-icon">📡</span>
+                <h4>MQTT</h4>
+                <p>Protokol komunikasi</p>
+            </div>
+            <div class="tech-item"><span class="tech-icon">🔴</span>
+                <h4>Node-RED</h4>
+                <p>Flow processing</p>
+            </div>
+            <div class="tech-item"><span class="tech-icon">🐘</span>
+                <h4>PHP</h4>
+                <p>Backend dashboard</p>
+            </div>
+            <div class="tech-item"><span class="tech-icon">🗄️</span>
+                <h4>MySQL</h4>
+                <p>Database</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- TANTANGAN -->
+    <section class="project-section">
+        <div class="project-section-title">
+            <p>PROSES</p>
+            <h2>Tantangan & Solusi</h2>
+        </div>
+
+        <div class="challenge-list">
+            <div class="challenge-item">
+                <h4>⚠️ Pembacaan sensor tidak stabil (noise)</h4>
+                <p>
+                    <strong>Solusi:</strong> Menerapkan filter moving average
+                    pada ESP32 dan kalibrasi ulang HX711 untuk
+                    memperhalus nilai berat.
+                </p>
+            </div>
+            <div class="challenge-item">
+                <h4>⚠️ Koneksi WiFi terputus sesekali</h4>
+                <p>
+                    <strong>Solusi:</strong> Menambahkan mekanisme
+                    auto-reconnect dan buffer data lokal agar
+                    data tidak hilang saat koneksi pulih.
+                </p>
+            </div>
+            <div class="challenge-item">
+                <h4>⚠️ Notifikasi telat saat cairan habis</h4>
+                <p>
+                    <strong>Solusi:</strong> Mengatur threshold berbasis
+                    persentase (bukan gram mentah) dan memakai
+                    interval publish MQTT yang lebih cepat.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section class="project-cta">
+        <h2>Tertarik dengan proyek serupa?</h2>
+        <p>Silakan hubungi saya untuk diskusi atau kolaborasi.</p>
+        <div class="hero-buttons" style="justify-content:center;">
+            <a href="../index.html#contact" class="btn primary">Hubungi Saya</a>
+            <a href="../index.html#projects" class="btn secondary">Lihat Proyek Lain</a>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>© <span id="year"></span> Batara Hasintongan Nadapdap. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+
+</body>
+
+</html>

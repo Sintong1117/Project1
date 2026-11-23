@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="id">
 
@@ -7,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Batara Hasintongan Nadapdap | Portfolio</title>
+    <meta name="description"
+        content="Portfolio Batara Hasintongan Nadapdap — IT Support & IT Infrastructure. DevOps, SRE, dan IT Operations enthusiast.">
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -36,7 +37,6 @@
     <section id="home" class="hero">
 
         <div class="hero-content">
-
             <p class="greeting">Halo, saya</p>
 
             <h1>
@@ -44,12 +44,15 @@
                 <span>Nadapdap</span>
             </h1>
 
-            <h2>IT Support & Software Developer</h2>
+            <h2>IT Support | Aspiring DevOps Engineer</h2>
 
             <p class="hero-description">
-                Lulusan D3 Teknologi Komputer yang memiliki
-                minat pada IT Support, System Administration,
-                IT Infrastructure, IoT, dan Software Development.
+                Lulusan D3 Teknologi Komputer dari Institut Teknologi Del
+                dengan pengalaman magang di bidang IT Support.
+                Memiliki ketertarikan pada Linux, pengelolaan infrastruktur,
+                jaringan komputer, dan otomatisasi sistem.
+                <br>
+                <span class="hero-role">DevOps · SRE · IT Operations</span>
             </p>
 
             <div class="hero-buttons">
@@ -66,8 +69,6 @@
 
     </section>
 
-
-    <!-- ABOUT -->
 
     <!-- ABOUT -->
     <section id="about" class="section">
@@ -95,16 +96,21 @@
                 </p>
 
                 <p>
-                    Saya memiliki pengalaman sebagai IT Support Intern
-                    dengan pengalaman dalam troubleshooting aplikasi,
-                    pengelolaan database MySQL, administrasi sistem Linux,
-                    serta pengembangan website berbasis PHP.
+                    Saya memiliki pengalaman magang sebagai IT Support dengan tanggung jawab dalam melakukan
+                    troubleshooting aplikasi, menganalisis dan mendokumentasikan laporan error atau bug, melakukan
+                    pengujian awal sistem, serta mengelola database MySQL.
                 </p>
 
                 <p>
-                    Saya tertarik untuk terus mengembangkan kemampuan
-                    di bidang IT Support, System Administration,
-                    IT Infrastructure, DevOps, IoT, dan Software Development.
+                    Selain itu, saya memiliki pengalaman praktik dalam penggunaan Linux, Docker, Kubernetes (K3s), Helm,
+                    dan Argo CD melalui pengembangan proyek personal Homelab sebagai sarana mempelajari pengelolaan
+                    infrastruktur dan penerapan GitOps.
+                </p>
+
+                <p>
+                    Saya tertarik untuk terus mengembangkan kemampuan di bidang IT Support, System Administration, IT
+                    Infrastructure,
+                    DevOps, Site Reliability Engineering (SRE), dan IoT.
                 </p>
 
             </div>
@@ -112,8 +118,6 @@
         </div>
 
     </section>
-
-
 
 
     <!-- SKILLS -->
@@ -213,163 +217,129 @@
 
         <div class="projects-grid">
 
-            <!-- PROJECT 1 -->
-            <article class="project-card">
+            <!-- PROJECT 1: IoT Infus -->
+            <a href="proyek/iot-infus.html" class="project-card project-image-card">
 
-                <div class="project-number">
-                    01
-                </div>
+                <img src="images/iot-infus.png" alt="Sistem Monitoring Infus Berbasis IoT" class="project-image">
 
-                <div class="project-content">
+                <div class="project-overlay">
 
-                    <p class="project-category">
-                        Internet of Things
-                    </p>
+                    <div class="project-number">01</div>
 
-                    <h3>
-                        Implementasi Sistem Otomatis
-                        dan Monitoring Infus Berbasis IoT
-                    </h3>
+                    <div class="project-content">
 
-                    <p>
-                        Sistem untuk melakukan monitoring sisa cairan
-                        infus secara real-time menggunakan sensor berat.
-                        Data sensor diproses menggunakan ESP32 dan
-                        Node-RED kemudian ditampilkan pada website.
-                    </p>
+                        <p class="project-category">Internet of Things</p>
 
-                    <div class="tags">
-                        <span>ESP32</span>
-                        <span>Load Cell</span>
-                        <span>HX711</span>
-                        <span>Node-RED</span>
-                        <span>PHP</span>
-                        <span>MySQL</span>
+                        <h3>
+                            Implementasi Sistem Otomatis
+                            dan Monitoring Infus Berbasis IoT
+                        </h3>
+
+                        <p>
+                            Sistem untuk melakukan monitoring sisa cairan
+                            infus secara real-time menggunakan sensor berat.
+                            Data sensor diproses menggunakan ESP32 dan
+                            Node-RED kemudian ditampilkan pada website.
+                        </p>
+
+                        <div class="tags">
+                            <span>ESP32</span>
+                            <span>Load Cell</span>
+                            <span>HX711</span>
+                            <span>Node-RED</span>
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                        </div>
+
+                        <span class="project-button">Lihat Project →</span>
+
                     </div>
 
                 </div>
-                <!-- contoh -->
-            </article>
-
-            <!-- <a href="#" target="_blank" class="project-link"> -->
-            <a href="#" class="project-link">
-                <article class="project-card project-image-card">
-
-                    <!-- GAMBAR PROJECT -->
-                    <img src="images/people.png" alt="Danau Toba Tourism Website" class="project-image">
-
-                    <!-- OVERLAY -->
-                    <div class="project-overlay">
-
-                        <div class="project-number">
-                            02
-                        </div>
-
-                        <div class="project-content">
-
-                            <p class="project-category">
-                                Web Development
-                            </p>
-
-                            <h3>
-                                Danau Toba Tourism Website
-                            </h3>
-
-                            <p>
-                                Website informasi pariwisata Danau Toba
-                                yang menyediakan informasi mengenai berbagai
-                                destinasi wisata. Data destinasi disimpan
-                                menggunakan database MySQL.
-                            </p>
-
-                            <div class="tags">
-                                <span>PHP</span>
-                                <span>MySQL</span>
-                                <span>HTML</span>
-                                <span>CSS</span>
-                            </div>
-
-                            <div class="project-button">
-                                Lihat Project →
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </article>
 
             </a>
-            <!-- PROJECT 2 -->
-            <!-- <article class="project-card">
 
-                <div class="project-number">
-                    02
-                </div>
 
-                <div class="project-content">
+            <!-- PROJECT 2: Danau Toba -->
+            <a href="proyek/danau-toba.html" class="project-card project-image-card">
 
-                    <p class="project-category">
-                        Web Development
-                    </p>
+                <img src="images/people.png" alt="Danau Toba Tourism Website" class="project-image">
 
-                    <h3>
-                        Danau Toba Tourism Website
-                    </h3>
+                <div class="project-overlay">
 
-                    <p>
-                        Website informasi pariwisata Danau Toba
-                        yang menyediakan informasi mengenai berbagai
-                        destinasi wisata. Data destinasi disimpan
-                        menggunakan database MySQL.
-                    </p>
+                    <div class="project-number">02</div>
 
-                    <div class="tags">
-                        <span>PHP</span>
-                        <span>MySQL</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
+                    <div class="project-content">
+
+                        <p class="project-category">Web Development</p>
+
+                        <h3>Danau Toba Tourism Website</h3>
+
+                        <p>
+                            Website informasi pariwisata Danau Toba
+                            yang menyediakan informasi mengenai berbagai
+                            destinasi wisata. Data destinasi disimpan
+                            menggunakan database MySQL.
+                        </p>
+
+                        <div class="tags">
+                            <span>PHP</span>
+                            <span>MySQL</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+
+                        <span class="project-button">Lihat Project →</span>
+
                     </div>
 
                 </div>
 
-            </article> -->
+            </a>
 
 
-            <!-- PROJECT 3 -->
-            <article class="project-card">
+            <!-- PROJECT 3: Kubernetes Homelab & GitOps -->
+            <a href="proyek/homelab-k3s.html" class="project-card project-image-card">
 
-                <div class="project-number">
-                    03
-                </div>
+                <img src="images/homelab-k3s.png" alt="Kubernetes Homelab & GitOps" class="project-image">
 
-                <div class="project-content">
+                <div class="project-overlay">
 
-                    <p class="project-category">
-                        Python
-                    </p>
+                    <div class="project-number">03</div>
 
-                    <h3>
-                        Personal CLI Assistant
-                    </h3>
+                    <div class="project-content">
 
-                    <p>
-                        Aplikasi command-line sederhana menggunakan
-                        Python untuk mengelola daftar tugas.
-                        Project ini dikembangkan untuk mempelajari
-                        Python, Function, File, OOP, dan Git.
-                    </p>
+                        <p class="project-category">DevOps & Infrastructure</p>
 
-                    <div class="tags">
-                        <span>Python</span>
-                        <span>OOP</span>
-                        <span>File</span>
-                        <span>Git</span>
+                        <h3>Kubernetes Homelab & GitOps</h3>
+
+                        <p>
+                            Membangun infrastruktur Kubernetes Homelab
+                            menggunakan VMware dan Ubuntu Server dengan K3s
+                            sebagai container orchestration platform.
+                            Mengimplementasikan GitOps menggunakan Argo CD
+                            untuk mengelola deployment aplikasi secara otomatis
+                            melalui GitHub, serta Helm untuk pengelolaan aplikasi
+                            Kubernetes.
+                        </p>
+
+                        <div class="tags">
+                            <span>Linux</span>
+                            <span>Docker</span>
+                            <span>Kubernetes</span>
+                            <span>K3s</span>
+                            <span>Helm</span>
+                            <span>Argo CD</span>
+                            <span>Git</span>
+                        </div>
+
+                        <span class="project-button">Lihat Project →</span>
+
                     </div>
 
                 </div>
 
-            </article>
+            </a>
 
         </div>
 
@@ -439,7 +409,7 @@
 
 
     <!-- EDUCATION -->
-    <section class="section education-section">
+    <section id="education" class="section education-section">
 
         <div class="section-title">
             <p>PENDIDIKAN</p>
@@ -537,4 +507,3 @@
 </body>
 
 </html>
-```

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kubernetes Homelab & GitOps | Batara Nadapdap</title>
+    <meta name="description"
+        content="Detail proyek Kubernetes Homelab & GitOps menggunakan K3s, Argo CD, dan Helm untuk deployment aplikasi otomatis melalui GitHub.">
+
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="proyek.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar">
+            <a href="../index.html" class="logo" style="text-decoration:none;">BHN<span>.</span></a>
+
+            <ul class="nav-menu">
+                <li><a href="../index.html#home">Beranda</a></li>
+                <li><a href="../index.html#about">Tentang</a></li>
+                <li><a href="../index.html#skills">Keahlian</a></li>
+                <li><a href="../index.html#projects">Proyek</a></li>
+                <li><a href="../index.html#experience">Pengalaman</a></li>
+                <li><a href="../index.html#contact">Kontak</a></li>
+            </ul>
+
+            <button class="menu-button" onclick="toggleMenu()" aria-label="Buka menu navigasi">☰</button>
+        </nav>
+    </header>
+
+
+    <!-- HERO PROJECT -->
+    <section class="project-hero">
+
+        <a href="../index.html#projects" class="back-link">← Kembali ke Proyek</a>
+
+        <p class="project-hero-category">DevOps & Infrastructure · 2025</p>
+
+        <h1>Kubernetes Homelab & GitOps</h1>
+
+        <p class="project-hero-description">
+            Membangun infrastruktur Kubernetes Homelab menggunakan
+            VMware dan Ubuntu Server dengan <strong>K3s</strong> sebagai
+            container orchestration platform. Mengimplementasikan
+            <strong>GitOps</strong> menggunakan <strong>Argo CD</strong>
+            untuk mengelola deployment aplikasi secara otomatis melalui
+            GitHub, serta <strong>Helm</strong> untuk pengelolaan
+            aplikasi Kubernetes.
+        </p>
+
+        <div class="tags">
+            <span>Linux</span>
+            <span>Docker</span>
+            <span>Kubernetes</span>
+            <span>K3s</span>
+            <span>Helm</span>
+            <span>Argo CD</span>
+            <span>Git</span>
+        </div>
+
+        <div class="project-hero-buttons">
+            <a href="https://github.com/batara3355" class="btn primary" target="_blank" rel="noopener">💻 Source
+                Code</a>
+            <a href="#" class="btn secondary" target="_blank" rel="noopener">📄 Dokumentasi</a>
+        </div>
+
+    </section>
+
+
+    <!-- COVER -->
+    <section class="project-cover">
+        <img src="../images/homelab-k3s.png" alt="Kubernetes Homelab & GitOps Architecture" class="project-cover-img">
+    </section>
+
+
+    <!-- OVERVIEW -->
+    <section class="project-section">
+        <div class="project-section-title">
+            <p>OVERVIEW</p>
+            <h2>Tentang Proyek</h2>
+        </div>
+
+        <div class="project-overview-grid">
+            <div class="project-info-card">
+                <h3>🎯 Tujuan</h3>
+                <p>
+                    Membangun lingkungan Kubernetes mandiri (homelab)
+                    untuk mempelajari orkestrasi container, deployment
+                    otomatis, dan praktik GitOps yang umum dipakai
+                    di industri DevOps modern.
+                </p>
+            </div>
+            <div class="project-info-card">
+                <h3>👤 Peran Saya</h3>
+                <p>
+                    Infrastructure & DevOps Engineer — merancang
+                    topologi VM, menginstal K3s, menyiapkan Argo CD
+                    dan Helm, serta membangun pipeline GitOps dari
+                    repositori GitHub ke cluster.
+                </p>
+            </div>
+            <div class="project-info-card">
+                <h3>⏱️ Durasi</h3>
+                <p>
+                    ± 3 minggu (2025), dikerjakan
+                    secara mandiri sebagai proyek
+                    pembelajaran DevOps.
+                </p>
+            </div>
+            <div class="project-info-card">
+                <h3>📦 Status</h3>
+                <p>
+                    Selesai — cluster berjalan stabil,
+                    Argo CD berhasil melakukan sync otomatis
+                    saat repositori GitHub diperbarui.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FITUR -->
+    <section class="project-section">
+        <div class="project-section-title">
+            <p>FITUR</p>
+            <h2>Fitur Utama</h2>
+        </div>
+
+        <ul class="feature-list">
+            <li>
+                <span class="feature-icon">☸️</span>
+                <div>
+                    <h4>K3s Cluster</h4>
+                    <p>Cluster Kubernetes ringan (K3s) berjalan di atas Ubuntu Server dalam VM VMware, cocok untuk
+                        homelab dengan resource terbatas.</p>
+                </div>
+            </li>
+            <li>
+                <span class="feature-icon">🔄</span>
+                <div>
+                    <h4>GitOps dengan Argo CD</h4>
+                    <p>Sinkronisasi otomatis antara repositori GitHub dan cluster — cukup <code>git push</code>, Argo CD
+                        langsung men-deploy perubahan.</p>
+                </div>
+            </li>
+            <li>
+                <span class="feature-icon">📦</span>
+                <div>
+                    <h4>Helm Chart</h4>
+                    <p>Pengelolaan aplikasi Kubernetes menggunakan Helm chart agar konfigurasi dapat diparameterisasi
+                        dan digunakan ulang.</p>
+                </div>
+            </li>
+            <li>
+                <span class="feature-icon">🐳</span>
+                <div>
+                    <h4>Containerization</h4>
+                    <p>Aplikasi dikemas dengan Docker dan dipublikasikan ke registry sebelum di-deploy ke cluster.</p>
+                </div>
+            </li>
+            <li>
+                <span class="feature-icon">🔍</span>
+                <div>
+                    <h4>Monitoring</h4>
+                    <p>Monitoring resource cluster dan aplikasi untuk memantau health, penggunaan CPU, dan memory.</p>
+                </div>
+            </li>
+            <li>
+                <span class="feature-icon">🌐</span>
+                <div>
+                    <h4>Ingress & Service</h4>
+                    <p>Konfigurasi Ingress untuk mengakses aplikasi via domain lokal, dengan Service dan LoadBalancer
+                        internal.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+
+    <!-- ARSITEKTUR -->
+    <section class="project-section">
+        <div class="project-section-title">
+            <p>ARSITEKTUR</p>
+            <h2>Topologi Infrastruktur</h2>
+        </div>
+
+        <div class="challenge-list">
+            <div class="challenge-item">
+                <h4>🖥️ Layer 1 — Host & Virtualisasi</h4>
+                <p>
+                    Laptop/PC host menjalankan <strong>VMware Workstation</strong>
+                    dengan beberapa VM Ubuntu Server sebagai node cluster
+                    (1 control plane + 1–2 worker).
+                </p>
+            </div>
+            <div class="challenge-item">
+                <h4>☸️ Layer 2 — Kubernetes (K3s)</h4>
+                <p>
+                    K3s diinstal di setiap VM. Control plane mengelola
+                    scheduling, worker node menjalankan Pod aplikasi.
+                    K3s dipilih karena ringan (~100 MB) dan mudah diinstal.
+                </p>
+            </div>
+            <div class="challenge-item">
+                <h4>🔄 Layer 3 — GitOps (Argo CD)</h4>
+                <p>
+                    Argo CD berjalan sebagai aplikasi di dalam cluster,
+                    memantau repositori GitHub. Setiap perubahan manifest
+                    di repo langsung di-apply ke cluster (auto-sync).
+                </p>
+            </div>
+            <div class="challenge-item">
+                <h4>📦 Layer 4 — Aplikasi & Helm</h4>
+                <p>
+                    Aplikasi dikemas dalam Helm chart. Argo CD me-render
+                    chart dan men-deploy ke namespace yang sesuai
+                    (mis. <code>production</code>, <code>staging</code>).
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- GITOPS WORKFLOW -->
+    <section class="project-section">
+        <div class="project-section-title">
+            <p>WORKFLOW</p>
+            <h2>Alur GitOps</h2>
+        </div>
+
+        <div class="challenge-list">
+            <div class="challenge-item">
+                <h4>1️⃣ Developer push ke GitHub</h4>
+                <p>Perubahan manifest (Deployment, Service, Helm values) di-commit dan di-push ke repositori Git.</p>
+            </div>
+            <div class="challenge-item">
+                <h4>2️⃣ Argo CD mendeteksi perubahan</h4>
+                <p>Argo CD melakukan polling repositori dan membandingkan <em>desired state</em> (Git) dengan <em>actual
+                        state</em> (cluster).</p>
+            </div>
+            <div class="challenge-item">
+                <h4>3️⃣ Sync otomatis</h4>
+                <p>Jika ada perbedaan, Argo CD men-deploy manifest baru ke cluster tanpa intervensi manual.</p>
+            </div>
+            <div class="challenge-item">
+                <h4>4️⃣ Verifikasi & rollback</h4>
+                <p>Status sync terlihat di dashboard Argo CD. Jika gagal, tinggal <code>git revert</code> — cluster
+                    kembali ke versi sebelumnya.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- TEKNOLOGI -->
+    <section class="project-section">
+        <div class="project-section-title">
+            <p>TEKNOLOGI</p>
+            <h2>Tech Stack</h2>
+        </div>
+
+        <div class="tech-grid">
+            <div class="tech-item"><span class="tech-icon">🖥️</span>
+                <h4>VMware</h4>
+                <p>Virtualisasi</p>
+            </div>
+            <div class="tech-item"><span class="tech-icon">🐧</span>
+                <h4>Ubuntu Server</h4>
+                <p>OS node cluster</p>
+            </div>
+            <div class="tech-item"><span class="tech-icon">🐳</span>
+                <h4>Docker</h4>
+                <p>Container runtime</p>
+            </div>
+            <div class="tech-item"><span class="tech-icon">☸️</span>
+                <h4>K3s</h4>
+                <p>Kubernetes ringan</p>
+            </div>
+            <div class="tech-item"><span class="tech-icon">📦</span>
+                <h4>Helm</h4>
+                <p>Package manager</p>
+            </div>
+            <div class="tech-item"><span class="tech-icon">🔄</span>
+                <h4>Argo CD</h4>
+                <p>GitOps tool</p>
+            </div>
+            <div class="tech-item"><span class="tech-icon">🔀</span>
+                <h4>Git & GitHub</h4>
+                <p>Source of truth</p>
+            </div>
+            <div class="tech-item"><span class="tech-icon">🌐</span>
+                <h4>Ingress</h4>
+                <p>Routing aplikasi</p>
+            </div>
+            <div class="tech-item"><span class="tech-icon">📊</span>
+                <h4>Monitoring</h4>
+                <p>Health & metrics</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- TANTANGAN -->
+    <section class="project-section">
+        <div class="project-section-title">
+            <p>PROSES</p>
+            <h2>Tantangan & Solusi</h2>
+        </div>
+
+        <div class="challenge-list">
+            <div class="challenge-item">
+                <h4>⚠️ Resource VM terbatas (RAM/CPU)</h4>
+                <p>
+                    <strong>Solusi:</strong> Memilih K3s (bukan Kubernetes penuh)
+                    karena jauh lebih ringan, serta menonaktifkan komponen
+                    yang tidak dipakai (Traefik, ServiceLB) dan mengatur
+                    limit resource per Pod.
+                </p>
+            </div>
+            <div class="challenge-item">
+                <h4>⚠️ Networking antar VM dan cluster</h4>
+                <p>
+                    <strong>Solusi:</strong> Mengatur network adapter VMware
+                    ke mode <code>Bridged</code>/<code>NAT</code> dengan benar
+                    dan memastikan setiap node bisa saling ping dan
+                    mengakses API server K3s.
+                </p>
+            </div>
+            <div class="challenge-item">
+                <h4>⚠️ Argo CD tidak sync otomatis</h4>
+                <p>
+                    <strong>Solusi:</strong> Memeriksa konfigurasi repository
+                    (URL, branch, path) di Argo CD, memastikan <em>auto-sync</em>
+                    aktif, dan menambahkan <code>selfHeal: true</code> agar
+                    perubahan manual di cluster dikembalikan ke Git.
+                </p>
+            </div>
+            <div class="challenge-item">
+                <h4>⚠️ Image Docker tidak ter-pull</h4>
+                <p>
+                    <strong>Solusi:</strong> Menyiapkan image registry lokal
+                    (atau menggunakan Docker Hub publik) dan menambahkan
+                    <code>imagePullPolicy: Always</code> pada manifest
+                    agar update image selalu terambil.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- HASIL PEMBELAJARAN -->
+    <section class="project-section">
+        <div class="project-section-title">
+            <p>PEMBELAJARAN</p>
+            <h2>Yang Saya Pelajari</h2>
+        </div>
+
+        <div class="challenge-list">
+            <div class="challenge-item">
+                <h4>📚 Konsep Kubernetes</h4>
+                <p>Pod, Deployment, Service, Namespace, ConfigMap, Secret, dan Ingress — serta bagaimana semuanya saling
+                    terhubung.</p>
+            </div>
+            <div class="challenge-item">
+                <h4>📚 GitOps sebagai Pola Deployment</h4>
+                <p>Git sebagai <em>single source of truth</em> — deployment jadi auditable, reproducible, dan mudah
+                    di-rollback.</p>
+            </div>
+            <div class="challenge-item">
+                <h4>📚 Helm Templating</h4>
+                <p>Membuat chart reusable dengan <code>values.yaml</code> untuk environment berbeda (dev/staging/prod).
+                </p>
+            </div>
+            <div class="challenge-item">
+                <h4>📚 Troubleshooting Infrastruktur</h4>
+                <p>Membaca log Pod (<code>kubectl logs</code>), describe resource, dan debugging networking di cluster.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA -->
+    <section class="project-cta">
+        <h2>Tertarik dengan proyek serupa?</h2>
+        <p>Silakan hubungi saya untuk diskusi atau kolaborasi.</p>
+        <div class="hero-buttons" style="justify-content:center;">
+            <a href="../index.html#contact" class="btn primary">Hubungi Saya</a>
+            <a href="../index.html#projects" class="btn secondary">Lihat Proyek Lain</a>
+        </div>
+    </section>
+
+
+    <footer>
+        <p>© <span id="year"></span> Batara Hasintongan Nadapdap. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../script.js"></script>
+
+</body>
+
+</html>
